@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Entrance Exam Explorer | EduGuide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Edu<span>Guide</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html" class="active">
+                    Exams
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="explorer-hero exam-hero">
+
+        <div class="explorer-hero-content">
+
+            <div class="section-label">
+                ENTRANCE EXAM EXPLORER
+            </div>
+
+
+            <h1>
+                Find the right
+                <span>entrance exam.</span>
+            </h1>
+
+
+            <p>
+                Explore entrance examinations that can
+                help you reach the course and career
+                you want.
+            </p>
+
+
+            <div class="exam-search">
+
+                <span class="exam-search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="examSearch"
+                    placeholder="Search exams, courses or fields..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXAM EXPLORER
+         ===================================================== -->
+
+    <section class="exam-section">
+
+        <div class="exam-container">
+
+
+            <div class="exam-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        EXPLORE EXAMS
+                    </div>
+
+                    <h2>
+                        Entrance exams
+                        <span>you should know.</span>
+                    </h2>
+
+                </div>
+
+
+                <p id="examCount">
+                    6 exams available
+                </p>
+
+            </div>
+
+
+
+            <!-- EXAM GRID -->
+
+            <div
+                class="exam-grid"
+                id="examGrid"
+            >
+
+
+                <!-- JEE -->
+
+                <div
+                    class="exam-card"
+                    data-exam="jee"
+                >
+
+                    <div class="exam-card-top">
+
+                        <div class="exam-icon">
+                            ⚙
+                        </div>
+
+                        <span class="exam-code">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        JEE Main
+                    </h3>
+
+
+                    <p>
+                        Entrance examination for
+                        undergraduate engineering and
+                        technology programmes.
+                    </p>
+
+
+                    <div class="exam-tags">
+
+                        <span>
+                            Engineering
+                        </span>
+
+                        <span>
+                            MPC
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="exam-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- NEET -->
+
+                <div
+                    class="exam-card"
+                    data-exam="neet"
+                >
+
+                    <div class="exam-card-top">
+
+                        <div class="exam-icon">
+                            ⚕
+                        </div>
+
+                        <span class="exam-code">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        NEET UG
+                    </h3>
+
+
+                    <p>
+                        National entrance examination
+                        for undergraduate medical education.
+                    </p>
+
+
+                    <div class="exam-tags">
+
+                        <span>
+                            Medicine
+                        </span>
+
+                        <span>
+                            BiPC
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="exam-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- EAMCET -->
+
+                <div
+                    class="exam-card"
+                    data-exam="eamcet"
+                >
+
+                    <div class="exam-card-top">
+
+                        <div class="exam-icon">
+                            ◈
+                        </div>
+
+                        <span class="exam-code">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        AP EAPCET
+                    </h3>
+
+
+                    <p>
+                        State-level entrance examination
+                        for engineering, agriculture and
+                        pharmacy programmes in Andhra Pradesh.
+                    </p>
+
+
+                    <div class="exam-tags">
+
+                        <span>
+                            Andhra Pradesh
+                        </span>
+
+                        <span>
+                            Engineering
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="exam-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- CUET -->
+
+                <div
+                    class="exam-card"
+                    data-exam="cuet"
+                >
+
+                    <div class="exam-card-top">
+
+                        <div class="exam-icon">
+                            ▣
+                        </div>
+
+                        <span class="exam-code">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        CUET UG
+                    </h3>
+
+
+                    <p>
+                        Common entrance examination used
+                        for undergraduate admissions in
+                        participating universities.
+                    </p>
+
+
+                    <div class="exam-tags">
+
+                        <span>
+                            University
+                        </span>
+
+                        <span>
+                            Multiple Fields
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="exam-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- CLAT -->
+
+                <div
+                    class="exam-card"
+                    data-exam="clat"
+                >
+
+                    <div class="exam-card-top">
+
+                        <div class="exam-icon">
+                            ⚖
+                        </div>
+
+                        <span class="exam-code">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        CLAT
+                    </h3>
+
+
+                    <p>
+                        Entrance examination for
+                        undergraduate law programmes
+                        at participating national law universities.
+                    </p>
+
+
+                    <div class="exam-tags">
+
+                        <span>
+                            Law
+                        </span>
+
+                        <span>
+                            CEC
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="exam-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- NATA -->
+
+                <div
+                    class="exam-card"
+                    data-exam="nata"
+                >
+
+                    <div class="exam-card-top">
+
+                        <div class="exam-icon">
+                            △
+                        </div>
+
+                        <span class="exam-code">
+                            06
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        NATA
+                    </h3>
+
+
+                    <p>
+                        Aptitude test used for admission
+                        to undergraduate architecture
+                        programmes.
+                    </p>
+
+
+                    <div class="exam-tags">
+
+                        <span>
+                            Architecture
+                        </span>
+
+                        <span>
+                            MPC
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="exam-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                class="exam-no-results"
+                id="examNoResults"
+            >
+
+                <div class="exam-empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No exams found
+                </h3>
+
+                <p>
+                    Try searching with another exam,
+                    course or field.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXAM DETAILS
+         ===================================================== -->
+
+    <section
+        class="exam-details-section"
+        id="examDetails"
+    >
+
+        <div class="exam-container">
+
+
+            <div class="exam-details-heading">
+
+                <div class="section-label">
+                    EXAM DETAILS
+                </div>
+
+                <h2>
+                    Understand the
+                    <span>exam.</span>
+                </h2>
+
+                <p>
+                    Select an entrance exam above to
+                    explore its basic information.
+                </p>
+
+            </div>
+
+
+
+            <div class="selected-exam-card">
+
+                <div class="selected-exam-icon">
+                    ◈
+                </div>
+
+                <div>
+
+                    <span>
+                        SELECTED EXAM
+                    </span>
+
+                    <h3 id="selectedExamName">
+                        Select an exam
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="exam-detail-content"
+                id="examDetailContent"
+            >
+
+                <div class="exam-empty-state">
+
+                    <div class="exam-empty-large-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Choose an entrance exam
+                    </h3>
+
+                    <p>
+                        Click “View details” on any
+                        exam to see more information here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section class="explorer-cta">
+
+        <div class="explorer-cta-container">
+
+            <div>
+
+                <div class="section-label">
+                    KEEP EXPLORING
+                </div>
+
+                <h2>
+                    Your next step starts
+                    <span>here.</span>
+                </h2>
+
+                <p>
+                    Explore courses and careers to
+                    understand where each entrance
+                    exam can take you.
+                </p>
+
+            </div>
+
+
+            <a
+                href="courses.html"
+                class="primary-btn"
+            >
+                Explore courses →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Edu<span>Guide</span>
+                </a>
+
+                <p>
+                    Helping students understand
+                    what comes after +2.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduGuide. Built for students.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Scholarship Explorer | EduGuide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Edu<span>Guide</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="colleges.html">
+                    Colleges
+                </a>
+
+                <a href="scholarships.html" class="active">
+                    Scholarships
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="explorer-hero scholarship-hero">
+
+        <div class="explorer-hero-content">
+
+            <div class="section-label">
+                SCHOLARSHIP EXPLORER
+            </div>
+
+
+            <h1>
+                Find financial support
+                for your <span>education.</span>
+            </h1>
+
+
+            <p>
+                Explore scholarships and financial
+                assistance opportunities that can help
+                reduce the cost of your education.
+            </p>
+
+
+            <div class="scholarship-search">
+
+                <span class="scholarship-search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="scholarshipSearch"
+                    placeholder="Search scholarships, categories or eligibility..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCHOLARSHIP EXPLORER
+         ===================================================== -->
+
+    <section class="scholarship-section">
+
+        <div class="scholarship-container">
+
+
+            <div class="scholarship-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        EXPLORE SCHOLARSHIPS
+                    </div>
+
+                    <h2>
+                        Opportunities that can
+                        <span>support your studies.</span>
+                    </h2>
+
+                </div>
+
+
+                <p id="scholarshipCount">
+                    6 scholarships available
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SCHOLARSHIP GRID
+                 ================================================= -->
+
+            <div
+                class="scholarship-grid"
+                id="scholarshipGrid"
+            >
+
+
+                <!-- SCHOLARSHIP 1 -->
+
+                <div
+                    class="scholarship-card"
+                    data-scholarship="national-scholarship"
+                >
+
+                    <div class="scholarship-card-top">
+
+                        <div class="scholarship-icon">
+                            ₹
+                        </div>
+
+                        <span class="scholarship-code">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        National Scholarship Scheme
+                    </h3>
+
+
+                    <p>
+                        Financial assistance opportunities
+                        for eligible students pursuing
+                        higher education.
+                    </p>
+
+
+                    <div class="scholarship-tags">
+
+                        <span>
+                            Government
+                        </span>
+
+                        <span>
+                            Higher Education
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="scholarship-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- SCHOLARSHIP 2 -->
+
+                <div
+                    class="scholarship-card"
+                    data-scholarship="post-matric"
+                >
+
+                    <div class="scholarship-card-top">
+
+                        <div class="scholarship-icon">
+                            ✦
+                        </div>
+
+                        <span class="scholarship-code">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Post-Matric Scholarship
+                    </h3>
+
+
+                    <p>
+                        Scholarship support for eligible
+                        students continuing education
+                        after secondary schooling.
+                    </p>
+
+
+                    <div class="scholarship-tags">
+
+                        <span>
+                            Post-Matric
+                        </span>
+
+                        <span>
+                            Students
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="scholarship-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- SCHOLARSHIP 3 -->
+
+                <div
+                    class="scholarship-card"
+                    data-scholarship="merit"
+                >
+
+                    <div class="scholarship-card-top">
+
+                        <div class="scholarship-icon">
+                            ★
+                        </div>
+
+                        <span class="scholarship-code">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Merit Scholarship
+                    </h3>
+
+
+                    <p>
+                        Financial support opportunities
+                        based on academic performance
+                        and other eligibility requirements.
+                    </p>
+
+
+                    <div class="scholarship-tags">
+
+                        <span>
+                            Merit
+                        </span>
+
+                        <span>
+                            Academic
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="scholarship-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- SCHOLARSHIP 4 -->
+
+                <div
+                    class="scholarship-card"
+                    data-scholarship="girl-students"
+                >
+
+                    <div class="scholarship-card-top">
+
+                        <div class="scholarship-icon">
+                            ♀
+                        </div>
+
+                        <span class="scholarship-code">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Scholarship for Girl Students
+                    </h3>
+
+
+                    <p>
+                        Financial assistance programmes
+                        designed to support eligible girls
+                        pursuing higher education.
+                    </p>
+
+
+                    <div class="scholarship-tags">
+
+                        <span>
+                            Students
+                        </span>
+
+                        <span>
+                            Education
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="scholarship-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- SCHOLARSHIP 5 -->
+
+                <div
+                    class="scholarship-card"
+                    data-scholarship="engineering"
+                >
+
+                    <div class="scholarship-card-top">
+
+                        <div class="scholarship-icon">
+                            ⚙
+                        </div>
+
+                        <span class="scholarship-code">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Engineering Scholarships
+                    </h3>
+
+
+                    <p>
+                        Explore financial assistance
+                        opportunities available to students
+                        pursuing engineering programmes.
+                    </p>
+
+
+                    <div class="scholarship-tags">
+
+                        <span>
+                            Engineering
+                        </span>
+
+                        <span>
+                            Technical
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="scholarship-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- SCHOLARSHIP 6 -->
+
+                <div
+                    class="scholarship-card"
+                    data-scholarship="minority"
+                >
+
+                    <div class="scholarship-card-top">
+
+                        <div class="scholarship-icon">
+                            ◇
+                        </div>
+
+                        <span class="scholarship-code">
+                            06
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Minority Student Scholarships
+                    </h3>
+
+
+                    <p>
+                        Financial assistance opportunities
+                        for eligible students under
+                        applicable scholarship programmes.
+                    </p>
+
+
+                    <div class="scholarship-tags">
+
+                        <span>
+                            Financial Aid
+                        </span>
+
+                        <span>
+                            Higher Education
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="scholarship-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NO RESULTS
+                 ================================================= -->
+
+            <div
+                class="scholarship-no-results"
+                id="scholarshipNoResults"
+            >
+
+                <div class="scholarship-empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No scholarships found
+                </h3>
+
+                <p>
+                    Try searching with another scholarship,
+                    category or eligibility term.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCHOLARSHIP DETAILS
+         ===================================================== -->
+
+    <section
+        class="scholarship-details-section"
+        id="scholarshipDetails"
+    >
+
+        <div class="scholarship-container">
+
+
+            <div class="scholarship-details-heading">
+
+                <div class="section-label">
+                    SCHOLARSHIP DETAILS
+                </div>
+
+                <h2>
+                    Understand your
+                    <span>options.</span>
+                </h2>
+
+                <p>
+                    Select a scholarship above to explore
+                    its basic information.
+                </p>
+
+            </div>
+
+
+
+            <!-- SELECTED SCHOLARSHIP -->
+
+            <div class="selected-scholarship-card">
+
+                <div class="selected-scholarship-icon">
+                    ₹
+                </div>
+
+                <div>
+
+                    <span>
+                        SELECTED SCHOLARSHIP
+                    </span>
+
+                    <h3 id="selectedScholarshipName">
+                        Select a scholarship
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DETAILS -->
+
+            <div
+                class="scholarship-detail-content"
+                id="scholarshipDetailContent"
+            >
+
+                <div class="scholarship-empty-state">
+
+                    <div class="scholarship-empty-large-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Choose a scholarship
+                    </h3>
+
+                    <p>
+                        Click “View details” on any
+                        scholarship to see more information here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section class="explorer-cta">
+
+        <div class="explorer-cta-container">
+
+            <div>
+
+                <div class="section-label">
+                    KEEP EXPLORING
+                </div>
+
+                <h2>
+                    Education becomes easier
+                    <span>with the right support.</span>
+                </h2>
+
+                <p>
+                    Explore your courses, colleges and
+                    career options before making your decision.
+                </p>
+
+            </div>
+
+
+            <a
+                href="colleges.html"
+                class="primary-btn"
+            >
+                Explore colleges →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Edu<span>Guide</span>
+                </a>
+
+                <p>
+                    Helping students understand
+                    what comes after +2.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="colleges.html">
+                    Colleges
+                </a>
+
+                <a href="scholarships.html">
+                    Scholarships
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduGuide. Built for students.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

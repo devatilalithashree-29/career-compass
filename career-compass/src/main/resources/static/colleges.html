@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>College Explorer | EduGuide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Edu<span>Guide</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="colleges.html" class="active">
+                    Colleges
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="explorer-hero college-hero">
+
+        <div class="explorer-hero-content">
+
+            <div class="section-label">
+                COLLEGE EXPLORER
+            </div>
+
+
+            <h1>
+                Find colleges that
+                <span>fit your future.</span>
+            </h1>
+
+
+            <p>
+                Explore colleges, their courses,
+                locations and opportunities to make
+                a better-informed education decision.
+            </p>
+
+
+            <div class="college-search">
+
+                <span class="college-search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="collegeSearch"
+                    placeholder="Search colleges, courses or locations..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         COLLEGE EXPLORER
+         ===================================================== -->
+
+    <section class="college-section">
+
+        <div class="college-container">
+
+
+            <div class="college-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        EXPLORE COLLEGES
+                    </div>
+
+                    <h2>
+                        Discover your
+                        <span>college options.</span>
+                    </h2>
+
+                </div>
+
+
+                <p id="collegeCount">
+                    6 colleges available
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 COLLEGE GRID
+                 ================================================= -->
+
+            <div
+                class="college-grid"
+                id="collegeGrid"
+            >
+
+
+                <!-- COLLEGE 1 -->
+
+                <div
+                    class="college-card"
+                    data-college="iit-hyderabad"
+                >
+
+                    <div class="college-card-top">
+
+                        <div class="college-icon">
+                            🎓
+                        </div>
+
+                        <span class="college-code">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        IIT Hyderabad
+                    </h3>
+
+
+                    <p>
+                        An institute offering undergraduate,
+                        postgraduate and research programmes
+                        in engineering, science and technology.
+                    </p>
+
+
+                    <div class="college-tags">
+
+                        <span>
+                            Engineering
+                        </span>
+
+                        <span>
+                            Hyderabad
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="college-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- COLLEGE 2 -->
+
+                <div
+                    class="college-card"
+                    data-college="nit-warangal"
+                >
+
+                    <div class="college-card-top">
+
+                        <div class="college-icon">
+                            ◈
+                        </div>
+
+                        <span class="college-code">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        NIT Warangal
+                    </h3>
+
+
+                    <p>
+                        A leading technical institution
+                        offering programmes in engineering,
+                        technology and related disciplines.
+                    </p>
+
+
+                    <div class="college-tags">
+
+                        <span>
+                            Engineering
+                        </span>
+
+                        <span>
+                            Warangal
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="college-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- COLLEGE 3 -->
+
+                <div
+                    class="college-card"
+                    data-college="andhra-university"
+                >
+
+                    <div class="college-card-top">
+
+                        <div class="college-icon">
+                            ◇
+                        </div>
+
+                        <span class="college-code">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Andhra University
+                    </h3>
+
+
+                    <p>
+                        A university offering programmes
+                        across science, engineering, arts,
+                        commerce and other disciplines.
+                    </p>
+
+
+                    <div class="college-tags">
+
+                        <span>
+                            University
+                        </span>
+
+                        <span>
+                            Visakhapatnam
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="college-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- COLLEGE 4 -->
+
+                <div
+                    class="college-card"
+                    data-college="jntu-kakinada"
+                >
+
+                    <div class="college-card-top">
+
+                        <div class="college-icon">
+                            ⚙
+                        </div>
+
+                        <span class="college-code">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        JNTU Kakinada
+                    </h3>
+
+
+                    <p>
+                        A technical university known for
+                        engineering, technology and
+                        professional education.
+                    </p>
+
+
+                    <div class="college-tags">
+
+                        <span>
+                            Engineering
+                        </span>
+
+                        <span>
+                            Kakinada
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="college-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- COLLEGE 5 -->
+
+                <div
+                    class="college-card"
+                    data-college="osmania-university"
+                >
+
+                    <div class="college-card-top">
+
+                        <div class="college-icon">
+                            ▣
+                        </div>
+
+                        <span class="college-code">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Osmania University
+                    </h3>
+
+
+                    <p>
+                        A multidisciplinary university
+                        offering programmes in science,
+                        arts, commerce, law and technology.
+                    </p>
+
+
+                    <div class="college-tags">
+
+                        <span>
+                            University
+                        </span>
+
+                        <span>
+                            Hyderabad
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="college-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- COLLEGE 6 -->
+
+                <div
+                    class="college-card"
+                    data-college="svu"
+                >
+
+                    <div class="college-card-top">
+
+                        <div class="college-icon">
+                            ✦
+                        </div>
+
+                        <span class="college-code">
+                            06
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Sri Venkateswara University
+                    </h3>
+
+
+                    <p>
+                        A university offering undergraduate
+                        and postgraduate education across
+                        multiple academic disciplines.
+                    </p>
+
+
+                    <div class="college-tags">
+
+                        <span>
+                            University
+                        </span>
+
+                        <span>
+                            Tirupati
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="college-view-btn"
+                        type="button"
+                    >
+                        View details
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NO RESULTS
+                 ================================================= -->
+
+            <div
+                class="college-no-results"
+                id="collegeNoResults"
+            >
+
+                <div class="college-empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No colleges found
+                </h3>
+
+                <p>
+                    Try searching with another college,
+                    course or location.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         COLLEGE DETAILS
+         ===================================================== -->
+
+    <section
+        class="college-details-section"
+        id="collegeDetails"
+    >
+
+        <div class="college-container">
+
+
+            <div class="college-details-heading">
+
+                <div class="section-label">
+                    COLLEGE DETAILS
+                </div>
+
+                <h2>
+                    Know your
+                    <span>college.</span>
+                </h2>
+
+                <p>
+                    Select a college above to explore
+                    its basic information.
+                </p>
+
+            </div>
+
+
+
+            <!-- SELECTED COLLEGE -->
+
+            <div class="selected-college-card">
+
+                <div class="selected-college-icon">
+                    🎓
+                </div>
+
+                <div>
+
+                    <span>
+                        SELECTED COLLEGE
+                    </span>
+
+                    <h3 id="selectedCollegeName">
+                        Select a college
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DETAILS -->
+
+            <div
+                class="college-detail-content"
+                id="collegeDetailContent"
+            >
+
+                <div class="college-empty-state">
+
+                    <div class="college-empty-large-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Choose a college
+                    </h3>
+
+                    <p>
+                        Click “View details” on any
+                        college to see more information here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section class="explorer-cta">
+
+        <div class="explorer-cta-container">
+
+            <div>
+
+                <div class="section-label">
+                    KEEP EXPLORING
+                </div>
+
+                <h2>
+                    Your future college
+                    <span>starts with research.</span>
+                </h2>
+
+                <p>
+                    Explore courses and entrance exams
+                    before making your college decision.
+                </p>
+
+            </div>
+
+
+            <a
+                href="exams.html"
+                class="primary-btn"
+            >
+                Explore exams →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Edu<span>Guide</span>
+                </a>
+
+                <p>
+                    Helping students understand
+                    what comes after +2.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="colleges.html">
+                    Colleges
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduGuide. Built for students.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

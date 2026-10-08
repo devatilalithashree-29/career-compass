@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Explorer | EduGuide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    E
+                </div>
+
+                <span>
+                    Edu<span class="logo-highlight">Guide</span>
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#explore" class="nav-link active">
+                    Explore
+                </a>
+
+                <a href="index.html#about" class="nav-link">
+                    About
+                </a>
+
+            </nav>
+
+
+            <a
+                href="index.html#explore"
+                class="nav-button"
+            >
+                Back to Explore
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="career-hero">
+
+            <div class="career-hero-content">
+
+                <span class="section-label">
+                    CAREER EXPLORER
+                </span>
+
+                <h1>
+                    Discover where your
+                    <span>education can take you.</span>
+                </h1>
+
+                <p>
+                    Explore career options connected to different
+                    courses and fields. Understand what each career
+                    involves and the skills you can build.
+                </p>
+
+
+                <div class="career-search">
+
+                    <span class="career-search-icon">
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="careerSearch"
+                        placeholder="Search for a career..."
+                        autocomplete="off">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAREER SECTION -->
+
+        <section class="career-section">
+
+            <div class="career-container">
+
+                <div class="career-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            EXPLORE CAREERS
+                        </span>
+
+                        <h2>
+                            Find a career
+                            <span>that interests you.</span>
+                        </h2>
+
+                    </div>
+
+                    <p id="careerCount">
+                        Explore available career options.
+                    </p>
+
+                </div>
+
+
+                <!-- CAREER GRID -->
+
+                <div
+                    class="career-grid"
+                    id="careerGrid"
+                >
+
+                    <div
+                        class="career-card"
+                        data-career="software engineer"
+                    >
+
+                        <div class="career-card-top">
+
+                            <div class="career-icon">
+                                &lt;/&gt;
+                            </div>
+
+                            <span class="career-code">
+                                01
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Software Engineer
+                        </h3>
+
+                        <p>
+                            Design, develop and maintain software
+                            applications using programming and
+                            problem-solving skills.
+                        </p>
+
+                        <div class="career-tags">
+
+                            <span>
+                                Technology
+                            </span>
+
+                            <span>
+                                Programming
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="career-view-btn"
+                            type="button"
+                        >
+                            Explore career
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="career-card"
+                        data-career="data scientist"
+                    >
+
+                        <div class="career-card-top">
+
+                            <div class="career-icon">
+                                ◉
+                            </div>
+
+                            <span class="career-code">
+                                02
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Data Scientist
+                        </h3>
+
+                        <p>
+                            Analyze data, identify patterns and use
+                            statistics and machine learning to solve
+                            real-world problems.
+                        </p>
+
+                        <div class="career-tags">
+
+                            <span>
+                                Data
+                            </span>
+
+                            <span>
+                                AI / ML
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="career-view-btn"
+                            type="button"
+                        >
+                            Explore career
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="career-card"
+                        data-career="doctor"
+                    >
+
+                        <div class="career-card-top">
+
+                            <div class="career-icon">
+                                ⚕
+                            </div>
+
+                            <span class="career-code">
+                                03
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Doctor
+                        </h3>
+
+                        <p>
+                            Diagnose, treat and help prevent diseases
+                            while providing healthcare to patients.
+                        </p>
+
+                        <div class="career-tags">
+
+                            <span>
+                                Healthcare
+                            </span>
+
+                            <span>
+                                Medicine
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="career-view-btn"
+                            type="button"
+                        >
+                            Explore career
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="career-card"
+                        data-career="pharmacist"
+                    >
+
+                        <div class="career-card-top">
+
+                            <div class="career-icon">
+                                +
+                            </div>
+
+                            <span class="career-code">
+                                04
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Pharmacist
+                        </h3>
+
+                        <p>
+                            Work with medicines, pharmaceutical
+                            products and patient medication guidance.
+                        </p>
+
+                        <div class="career-tags">
+
+                            <span>
+                                Pharmacy
+                            </span>
+
+                            <span>
+                                Healthcare
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="career-view-btn"
+                            type="button"
+                        >
+                            Explore career
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="career-card"
+                        data-career="civil engineer"
+                    >
+
+                        <div class="career-card-top">
+
+                            <div class="career-icon">
+                                ⌂
+                            </div>
+
+                            <span class="career-code">
+                                05
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Civil Engineer
+                        </h3>
+
+                        <p>
+                            Plan, design and manage infrastructure
+                            projects such as buildings, roads and bridges.
+                        </p>
+
+                        <div class="career-tags">
+
+                            <span>
+                                Engineering
+                            </span>
+
+                            <span>
+                                Construction
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="career-view-btn"
+                            type="button"
+                        >
+                            Explore career
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="career-card"
+                        data-career="business analyst"
+                    >
+
+                        <div class="career-card-top">
+
+                            <div class="career-icon">
+                                ↗
+                            </div>
+
+                            <span class="career-code">
+                                06
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Business Analyst
+                        </h3>
+
+                        <p>
+                            Analyze business requirements, processes
+                            and data to help organizations make better
+                            decisions.
+                        </p>
+
+                        <div class="career-tags">
+
+                            <span>
+                                Business
+                            </span>
+
+                            <span>
+                                Analytics
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="career-view-btn"
+                            type="button"
+                        >
+                            Explore career
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+
+                <div
+                    class="career-no-results"
+                    id="careerNoResults"
+                >
+
+                    <div class="career-empty-icon">
+                        ⌕
+                    </div>
+
+                    <h3>
+                        No careers found
+                    </h3>
+
+                    <p>
+                        Try searching for software,
+                        data, medicine, engineering or business.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CAREER DETAILS -->
+
+        <section
+            class="career-details-section"
+            id="careerDetails"
+        >
+
+            <div class="career-container">
+
+                <div class="career-details-heading">
+
+                    <span class="section-label">
+                        CAREER DETAILS
+                    </span>
+
+                    <h2>
+                        Understand the
+                        <span>career path.</span>
+                    </h2>
+
+                    <p>
+                        Select a career to understand the field,
+                        useful skills and related courses.
+                    </p>
+
+                </div>
+
+
+                <div class="selected-career-card">
+
+                    <div class="selected-career-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <span>
+                            SELECTED CAREER
+                        </span>
+
+                        <h3 id="selectedCareerName">
+                            Choose a career
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="career-detail-content"
+                    id="careerDetailContent"
+                >
+
+                    <div class="career-empty-state">
+
+                        <div class="career-empty-large-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Choose a career first
+                        </h3>
+
+                        <p>
+                            Career details will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="explorer-cta">
+
+            <div class="explorer-cta-container">
+
+                <div>
+
+                    <span class="section-label light-label">
+                        KEEP EXPLORING
+                    </span>
+
+                    <h2>
+                        Your career starts with
+                        <span>the right direction.</span>
+                    </h2>
+
+                    <p>
+                        Continue exploring entrance exams,
+                        colleges and scholarships.
+                    </p>
+
+                </div>
+
+                <a
+                    href="index.html#explore"
+                    class="cta-button"
+                >
+                    Explore More →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <div class="logo-icon">
+                        E
+                    </div>
+
+                    <span>
+                        Edu<span class="logo-highlight">
+                            Guide
+                        </span>
+                    </span>
+
+                </a>
+
+                <p>
+                    Your guide to what comes after +2.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduGuide. Built to help students choose better.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

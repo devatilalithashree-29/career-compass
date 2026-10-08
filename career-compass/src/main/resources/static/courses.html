@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Explorer | EduGuide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">E</div>
+
+                <span>
+                    Edu<span class="logo-highlight">Guide</span>
+                </span>
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#explore" class="nav-link active">
+                    Explore
+                </a>
+
+                <a href="index.html#about" class="nav-link">
+                    About
+                </a>
+
+            </nav>
+
+            <a href="index.html#explore" class="nav-button">
+                Back to Explore
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="course-hero">
+
+            <div class="course-hero-content">
+
+                <span class="section-label">
+                    COURSE EXPLORER
+                </span>
+
+                <h1>
+                    Discover a course
+                    <span>that fits your future.</span>
+                </h1>
+
+                <p>
+                    Explore courses, understand what you will study,
+                    check eligibility and discover the fields connected
+                    to your interests.
+                </p>
+
+                <div class="course-search">
+
+                    <span class="course-search-icon">
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="courseSearch"
+                        placeholder="Search for a course..."
+                        autocomplete="off">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COURSE SECTION -->
+
+        <section class="course-section">
+
+            <div class="course-container">
+
+                <div class="course-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            EXPLORE COURSES
+                        </span>
+
+                        <h2>
+                            Find your
+                            <span>next step.</span>
+                        </h2>
+
+                    </div>
+
+                    <p id="courseCount">
+                        Explore available courses.
+                    </p>
+
+                </div>
+
+
+                <!-- COURSE GRID -->
+
+                <div
+                    class="course-grid"
+                    id="courseGrid"
+                >
+
+                    <!-- Courses will be loaded here -->
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+
+                <div
+                    class="course-no-results"
+                    id="courseNoResults"
+                >
+
+                    <div class="course-empty-icon">
+                        ⌕
+                    </div>
+
+                    <h3>
+                        No courses found
+                    </h3>
+
+                    <p>
+                        Try searching for Computer Science,
+                        Information Technology or another course.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COURSE DETAILS -->
+
+        <section
+            class="course-details-section"
+            id="courseDetails"
+        >
+
+            <div class="course-container">
+
+                <div class="course-details-heading">
+
+                    <span class="section-label">
+                        COURSE DETAILS
+                    </span>
+
+                    <h2>
+                        Understand before
+                        <span>you choose.</span>
+                    </h2>
+
+                    <p>
+                        Select a course to understand its duration,
+                        eligibility and description.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="selected-course-card"
+                    id="selectedCourseCard"
+                >
+
+                    <div class="selected-course-icon">
+                        ◇
+                    </div>
+
+                    <div>
+
+                        <span>
+                            SELECTED COURSE
+                        </span>
+
+                        <h3 id="selectedCourseName">
+                            Choose a course
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="course-detail-content"
+                    id="courseDetailContent"
+                >
+
+                    <div class="course-empty-state">
+
+                        <div class="course-empty-large-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Choose a course first
+                        </h3>
+
+                        <p>
+                            Course details will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="explorer-cta">
+
+            <div class="explorer-cta-container">
+
+                <div>
+
+                    <span class="section-label light-label">
+                        KEEP EXPLORING
+                    </span>
+
+                    <h2>
+                        A course is a step.
+                        <span>Your career is the journey.</span>
+                    </h2>
+
+                    <p>
+                        Continue exploring careers, entrance exams,
+                        colleges and scholarships.
+                    </p>
+
+                </div>
+
+                <a
+                    href="index.html#explore"
+                    class="cta-button"
+                >
+                    Explore More →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+
+                    <div class="logo-icon">
+                        E
+                    </div>
+
+                    <span>
+                        Edu<span class="logo-highlight">
+                            Guide
+                        </span>
+                    </span>
+
+                </a>
+
+                <p>
+                    Your guide to what comes after +2.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#explore">
+                    Explore
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduGuide. Built to help students choose better.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

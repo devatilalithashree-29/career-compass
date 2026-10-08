@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Education Pathway Explorer | EduGuide</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                Edu<span>Guide</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="colleges.html">
+                    Colleges
+                </a>
+
+                <a href="scholarships.html">
+                    Scholarships
+                </a>
+
+                <a href="pathways.html" class="active">
+                    Pathways
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
+    <section class="explorer-hero pathway-hero">
+
+        <div class="explorer-hero-content">
+
+            <div class="section-label">
+                EDUCATION PATHWAY EXPLORER
+            </div>
+
+
+            <h1>
+                See where your
+                <span>education can take you.</span>
+            </h1>
+
+
+            <p>
+                Explore possible education journeys from
+                your +2 stream to courses, higher studies
+                and future career opportunities.
+            </p>
+
+
+            <div class="pathway-search">
+
+                <span class="pathway-search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="pathwaySearch"
+                    placeholder="Search a stream, course or career..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PATHWAY EXPLORER
+         ===================================================== -->
+
+    <section class="pathway-section">
+
+        <div class="pathway-container">
+
+
+            <div class="pathway-heading">
+
+                <div>
+
+                    <div class="section-label">
+                        EXPLORE PATHWAYS
+                    </div>
+
+                    <h2>
+                        From +2 to your
+                        <span>future career.</span>
+                    </h2>
+
+                </div>
+
+
+                <p id="pathwayCount">
+                    6 pathways available
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PATHWAY GRID
+                 ================================================= -->
+
+            <div
+                class="pathway-grid"
+                id="pathwayGrid"
+            >
+
+
+                <!-- PATHWAY 1 -->
+
+                <div
+                    class="pathway-card"
+                    data-pathway="mpc-software"
+                >
+
+                    <div class="pathway-card-top">
+
+                        <div class="pathway-icon">
+                            ⚙
+                        </div>
+
+                        <span class="pathway-code">
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway-flow">
+
+                        <span>
+                            MPC
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Engineering
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Software
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        MPC → CSE → Software Engineer
+                    </h3>
+
+
+                    <p>
+                        A common pathway for students
+                        interested in mathematics,
+                        computing and software development.
+                    </p>
+
+
+                    <button
+                        class="pathway-view-btn"
+                        type="button"
+                    >
+                        Explore pathway
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- PATHWAY 2 -->
+
+                <div
+                    class="pathway-card"
+                    data-pathway="bipc-medicine"
+                >
+
+                    <div class="pathway-card-top">
+
+                        <div class="pathway-icon">
+                            ⚕
+                        </div>
+
+                        <span class="pathway-code">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway-flow">
+
+                        <span>
+                            BiPC
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Medicine
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Doctor
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        BiPC → MBBS → Doctor
+                    </h3>
+
+
+                    <p>
+                        A medical education pathway for
+                        students interested in healthcare
+                        and patient care.
+                    </p>
+
+
+                    <button
+                        class="pathway-view-btn"
+                        type="button"
+                    >
+                        Explore pathway
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- PATHWAY 3 -->
+
+                <div
+                    class="pathway-card"
+                    data-pathway="bipc-pharmacy"
+                >
+
+                    <div class="pathway-card-top">
+
+                        <div class="pathway-icon">
+                            ✦
+                        </div>
+
+                        <span class="pathway-code">
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway-flow">
+
+                        <span>
+                            BiPC
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Pharmacy
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Pharmacist
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        BiPC → B.Pharm → Pharmacist
+                    </h3>
+
+
+                    <p>
+                        A pathway combining biology,
+                        pharmaceutical science and
+                        healthcare.
+                    </p>
+
+
+                    <button
+                        class="pathway-view-btn"
+                        type="button"
+                    >
+                        Explore pathway
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- PATHWAY 4 -->
+
+                <div
+                    class="pathway-card"
+                    data-pathway="mec-business"
+                >
+
+                    <div class="pathway-card-top">
+
+                        <div class="pathway-icon">
+                            ₹
+                        </div>
+
+                        <span class="pathway-code">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway-flow">
+
+                        <span>
+                            MEC
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Commerce
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Business
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        MEC → B.Com → Business Analyst
+                    </h3>
+
+
+                    <p>
+                        A pathway for students interested
+                        in commerce, business, finance and
+                        analytical roles.
+                    </p>
+
+
+                    <button
+                        class="pathway-view-btn"
+                        type="button"
+                    >
+                        Explore pathway
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+
+                <!-- PATHWAY 5 -->
+
+                <div
+                    class="pathway-card"
+                    data-pathway="cec-law"
+                >
+
+                    <div class="pathway-card-top">
+
+                        <div class="pathway-icon">
+                            ⚖
+                        </div>
+
+                        <span class="pathway-code">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway-flow">
+
+                        <span>
+                            CEC
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Law
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Legal Career
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        CEC → Law → Legal Professional
+                    </h3>
+
+
+                    <p>
+                        A pathway for students interested
+                        in law, legal studies, public policy
+                        and related careers.
+                    </p>
+
+
+                    <button
+                        class="pathway-view-btn"
+                        type="button"
+                    >
+                        Explore pathway
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- PATHWAY 6 -->
+
+                <div
+                    class="pathway-card"
+                    data-pathway="arts-social"
+                >
+
+                    <div class="pathway-card-top">
+
+                        <div class="pathway-icon">
+                            ◇
+                        </div>
+
+                        <span class="pathway-code">
+                            06
+                        </span>
+
+                    </div>
+
+
+                    <div class="pathway-flow">
+
+                        <span>
+                            Arts
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Social Science
+                        </span>
+
+                        <b>→</b>
+
+                        <span>
+                            Research
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Arts → Social Sciences → Research
+                    </h3>
+
+
+                    <p>
+                        A pathway for students interested
+                        in society, psychology, economics,
+                        research and humanities.
+                    </p>
+
+
+                    <button
+                        class="pathway-view-btn"
+                        type="button"
+                    >
+                        Explore pathway
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NO RESULTS
+                 ================================================= -->
+
+            <div
+                class="pathway-no-results"
+                id="pathwayNoResults"
+            >
+
+                <div class="pathway-empty-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No pathways found
+                </h3>
+
+                <p>
+                    Try searching with another stream,
+                    course or career.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PATHWAY DETAILS
+         ===================================================== -->
+
+    <section
+        class="pathway-details-section"
+        id="pathwayDetails"
+    >
+
+        <div class="pathway-container">
+
+
+            <div class="pathway-details-heading">
+
+                <div class="section-label">
+                    PATHWAY DETAILS
+                </div>
+
+                <h2>
+                    Understand your
+                    <span>education journey.</span>
+                </h2>
+
+                <p>
+                    Select a pathway to see how the
+                    different stages connect.
+                </p>
+
+            </div>
+
+
+
+            <!-- SELECTED PATHWAY -->
+
+            <div class="selected-pathway-card">
+
+                <div class="selected-pathway-icon">
+                    →
+                </div>
+
+                <div>
+
+                    <span>
+                        SELECTED PATHWAY
+                    </span>
+
+                    <h3 id="selectedPathwayName">
+                        Select a pathway
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PATHWAY DETAILS -->
+
+            <div
+                class="pathway-detail-content"
+                id="pathwayDetailContent"
+            >
+
+                <div class="pathway-empty-state">
+
+                    <div class="pathway-empty-large-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Choose a pathway
+                    </h3>
+
+                    <p>
+                        Click “Explore pathway” on any
+                        card to see the education journey here.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+    <section class="explorer-cta">
+
+        <div class="explorer-cta-container">
+
+            <div>
+
+                <div class="section-label">
+                    BUILD YOUR FUTURE
+                </div>
+
+                <h2>
+                    One decision can open
+                    <span>many possibilities.</span>
+                </h2>
+
+                <p>
+                    Explore streams, courses, careers,
+                    colleges and scholarships before
+                    choosing your path.
+                </p>
+
+            </div>
+
+
+            <a
+                href="streams.html"
+                class="primary-btn"
+            >
+                Start with streams →
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    Edu<span>Guide</span>
+                </a>
+
+                <p>
+                    Helping students understand
+                    what comes after +2.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="streams.html">
+                    Streams
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="careers.html">
+                    Careers
+                </a>
+
+                <a href="exams.html">
+                    Exams
+                </a>
+
+                <a href="colleges.html">
+                    Colleges
+                </a>
+
+                <a href="scholarships.html">
+                    Scholarships
+                </a>
+
+                <a href="pathways.html">
+                    Pathways
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduGuide. Built for students.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
