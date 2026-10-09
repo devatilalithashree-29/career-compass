@@ -61,9 +61,9 @@ public class CareerService {
             collegeAVLTree.insert(col);
         }
 
-        // Course: (id, name, durationYears, stream)
-        courses.add(new Course("crs1", "B.Tech Computer Science", 4, "MPC"));
-        courses.add(new Course("crs2", "MBBS", 5, "BiPC"));
+        // Course: (id, name, durationYears as double, stream)
+        courses.add(new Course("crs1", "B.Tech Computer Science", 4.0, "MPC"));
+        courses.add(new Course("crs2", "MBBS", 5.5, "BiPC"));
 
         // Exam: (id, name, registrationDeadline, difficultyRating)
         exams.add(new Exam("ex1", "AP EAPCET", "2026-04-15", 4.2));
@@ -106,6 +106,12 @@ public class CareerService {
     }
 
     public List<College> getCollegesWithinBudget(double maxFee) {
-        return collegeAVLTree.getCollegesUnderBudget(maxFee);
+        List<College> result = new ArrayList<>();
+        for (College col : colleges) {
+            if (col.getAnnualFee() <= maxFee) {
+                result.add(col);
+            }
+        }
+        return result;
     }
 }
