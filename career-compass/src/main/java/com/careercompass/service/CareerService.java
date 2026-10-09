@@ -1,5 +1,13 @@
 package com.careercompass.service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
 import com.careercompass.ds.CareerPathwayGraph;
 import com.careercompass.ds.CollegeAVLTree;
 import com.careercompass.ds.RecommendationEngine;
@@ -9,9 +17,6 @@ import com.careercompass.model.College;
 import com.careercompass.model.Course;
 import com.careercompass.model.Exam;
 import com.careercompass.model.StudentProfile;
-import org.springframework.stereotype.Service;
-
-import java.util.*;
 
 @Service
 public class CareerService {
@@ -62,9 +67,8 @@ public class CareerService {
         }
 
         // Course: (id, name, durationYears as double, stream)
-        courses.add(new Course("crs1", "B.Tech Computer Science", 4, "MPC"));
-        courses.add(new Course("crs2", "MBBS", 5, "BiPC"));
-
+       courses.add(new Course("crs1", "B.Tech Computer Science", 4, 120000.0));
+        courses.add(new Course("crs2", "MBBS", 5, 250000.0));
 
         // Exam: (id, name, registrationDeadline, difficultyRating)
         exams.add(new Exam("ex1", "AP EAPCET", "2026-04-15", 4.2));
