@@ -3,6 +3,7 @@ package com.careercompass.service;
 import com.careercompass.ds.CareerPathwayGraph;
 import com.careercompass.ds.CollegeAVLTree;
 import com.careercompass.ds.RecommendationEngine;
+import com.careercompass.ds.RecommendationEngine.RankedCareer;
 import com.careercompass.model.Career;
 import com.careercompass.model.College;
 import com.careercompass.model.Course;
@@ -24,43 +25,35 @@ public class CareerService {
     private final CollegeAVLTree collegeAVLTree = new CollegeAVLTree();
     private final RecommendationEngine recommendationEngine = new RecommendationEngine();
 
-    public static class RankedCareer {
-        private final Career career;
-        private final double score;
-
-        public RankedCareer(Career career, double score) {
-            this.career = career;
-            this.score = score;
-        }
-
-        public Career getCareer() {
-            return career;
-        }
-
-        public double getScore() {
-            return score;
-        }
-    }
-
     public CareerService() {
         initData();
     }
 
     private void initData() {
-        // Sample Careers
-        Career c1 = new Career("c1", "Software Engineer", "MPC", Arrays.asList("Coding", "Math", "Logic"), 800000.0, "Designing and developing scalable backend architectures and web systems.");
-        Career c2 = new Career("c2", "AI & Data Scientist", "MPC", Arrays.asList("Math", "Algorithms", "ML"), 950000.0, "Building neural models, predictive systems, and large language solutions.");
-        Career c3 = new Career("c3", "Medical Doctor (MBBS)", "BiPC", Arrays.asList("Biology", "Patient Care", "Healthcare"), 1000000.0, "Diagnosing clinical conditions, patient treatment, and medical therapy.");
-        Career c4 = new Career("c4", "Chartered Accountant", "MEC", Arrays.asList("Finance", "Audit", "Tax"), 850000.0, "Corporate taxation, statutory audits, and capital risk management.");
-        Career c5 = new Career("c5", "Corporate Lawyer", "CEC", Arrays.asList("Law", "Policy", "Debate"), 750000.0, "Corporate transactions, litigation, regulatory affairs, and rights protection.");
+        // Career: (id, title, stream, skills, prerequisites, description, avgSalary)
+        Career c1 = new Career("c1", "Software Engineer", "MPC",
+                Arrays.asList("Coding", "Math"), Arrays.asList("Math", "CS"),
+                "Designing and developing software systems.", 800000.0);
+        Career c2 = new Career("c2", "AI & Data Scientist", "MPC",
+                Arrays.asList("Python", "Math"), Arrays.asList("Math", "Statistics"),
+                "Building predictive and machine learning models.", 950000.0);
+        Career c3 = new Career("c3", "Medical Doctor", "BiPC",
+                Arrays.asList("Biology", "Care"), Arrays.asList("Biology", "Chemistry"),
+                "Diagnosing and treating patient health conditions.", 1000000.0);
+        Career c4 = new Career("c4", "Chartered Accountant", "MEC",
+                Arrays.asList("Finance", "Tax"), Arrays.asList("Math", "Commerce"),
+                "Auditing, tax planning, and corporate financial advisory.", 850000.0);
+        Career c5 = new Career("c5", "Corporate Lawyer", "CEC",
+                Arrays.asList("Law", "Debate"), Arrays.asList("Civics", "Economics"),
+                "Corporate contracts and business litigation.", 750000.0);
 
         careers.addAll(Arrays.asList(c1, c2, c3, c4, c5));
 
-        // Sample Colleges
-        College col1 = new College("col1", "Shri Vishnu Engineering College for Women (SVECW)", "Bhimavaram", 110000.0, "Autonomous (JNTUK)");
-        College col2 = new College("col2", "IIT Hyderabad", "Sangareddy", 225000.0, "Institute of National Importance");
-        College col3 = new College("col3", "NIT Warangal", "Warangal", 145000.0, "National Institute of Tech");
-        College col4 = new College("col4", "AIIMS Mangalagiri", "Mangalagiri", 15000.0, "National Medical Institute");
+        // College: (id, name, location, annualFee, cutOffRank, placementRate, rating)
+        College col1 = new College("col1", "SVECW", "Bhimavaram", 110000.0, 15000.0, 92.0, 4.5);
+        College col2 = new College("col2", "IIT Hyderabad", "Sangareddy", 225000.0, 2500.0, 98.0, 4.9);
+        College col3 = new College("col3", "NIT Warangal", "Warangal", 145000.0, 5000.0, 95.0, 4.8);
+        College col4 = new College("col4", "AIIMS Mangalagiri", "Mangalagiri", 15000.0, 1200.0, 99.0, 4.9);
 
         colleges.addAll(Arrays.asList(col1, col2, col3, col4));
 
@@ -68,12 +61,14 @@ public class CareerService {
             collegeAVLTree.insert(col);
         }
 
-        // Sample Courses & Exams
-        courses.add(new Course("crs1", "B.Tech Computer Science", "4 Years", "MPC"));
-        courses.add(new Course("crs2", "MBBS", "5.5 Years", "BiPC"));
-        exams.add(new Exam("ex1", "AP EAPCET", "Engineering & Agriculture"));
-        exams.add(new Exam("ex2", "JEE Main", "Engineering Admissions"));
-        exams.add(new Exam("ex3", "NEET UG", "National Medical Admissions"));
+        // Course: (id, name, durationYears, stream)
+        courses.add(new Course("crs1", "B.Tech Computer Science", 4, "MPC"));
+        courses.add(new Course("crs2", "MBBS", 5, "BiPC"));
+
+        // Exam: (id, name, registrationDeadline, difficultyRating)
+        exams.add(new Exam("ex1", "AP EAPCET", "2026-04-15", 4.2));
+        exams.add(new Exam("ex2", "JEE Main", "2026-03-30", 4.8));
+        exams.add(new Exam("ex3", "NEET UG", "2026-04-10", 4.9));
     }
 
     public List<Career> getAllCareers() {
@@ -84,24 +79,23 @@ public class CareerService {
         return colleges;
     }
 
-    public List<RankedCareer> getRecommendations(StudentProfile profile) {
-        List<RankedCareer> list = new ArrayList<>();
-        for (Career c : careers) {
-            double score = 0.5;
-            if (profile != null && profile.getStream() != null && profile.getStream().equalsIgnoreCase(c.getStream())) {
-                score += 0.4;
-            }
-            list.add(new RankedCareer(c, score));
-        }
-        list.sort((a, b) -> Double.compare(b.getScore(), a.getScore()));
-        return list;
+    public List<Exam> getAllExams() {
+        return exams;
     }
 
-    public Map<String, Object> getPathwayBFS(String careerId) {
-        Career found = careers.stream().filter(c -> c.getId().equalsIgnoreCase(careerId)).findFirst().orElse(null);
-        if (found == null && !careers.isEmpty()) {
-            found = careers.get(0);
-        }
+    public List<Course> getAllCourses() {
+        return courses;
+    }
+
+    public List<RankedCareer> getRecommendations(StudentProfile profile) {
+        return recommendationEngine.recommendCareers(profile, new ArrayList<>(careers));
+    }
+
+    public Map<String, Object> getPathwayForCareer(String careerId) {
+        Career found = careers.stream()
+                .filter(c -> c.getId().equalsIgnoreCase(careerId))
+                .findFirst()
+                .orElse(careers.isEmpty() ? null : careers.get(0));
 
         Map<String, Object> res = new HashMap<>();
         res.put("career", found);
@@ -111,13 +105,7 @@ public class CareerService {
         return res;
     }
 
-    public List<College> getCollegesByMaxFee(double maxFee) {
-        List<College> filtered = new ArrayList<>();
-        for (College c : colleges) {
-            if (c.getAnnualFee() <= maxFee) {
-                filtered.add(c);
-            }
-        }
-        return filtered;
+    public List<College> getCollegesWithinBudget(double maxFee) {
+        return collegeAVLTree.getCollegesUnderBudget(maxFee);
     }
 }
